@@ -1,7 +1,6 @@
 import {
   View,
   Text,
-  SafeAreaView,
   StyleSheet,
   Dimensions,
   ImageBackground,
@@ -9,11 +8,11 @@ import {
 } from "react-native";
 import React from "react";
 
-export default function LandingPage() {
+export default function LandingScreen({ navigation }) {
   const height = Dimensions.get("screen").height;
   const width = Dimensions.get("screen").width;
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <ImageBackground
         source={require("../assets/Images/Landing.png")}
         style={[
@@ -34,13 +33,16 @@ export default function LandingPage() {
             </Text>
           </View>
           <View>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => console.log(navigation)}
+            >
               <Text style={styles.Stext}>Get Started</Text>
             </TouchableOpacity>
           </View>
         </View>
       </ImageBackground>
-    </SafeAreaView>
+    </View>
   );
 }
 
