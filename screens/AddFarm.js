@@ -11,7 +11,7 @@ export default function AddFarm() {
   return (
     <View>
       <View>
-        <Text>AddFarm</Text>
+        <Text>Add Farm</Text>
       </View>
 
       <View>

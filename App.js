@@ -8,11 +8,13 @@ import FarmListScreen from "./screens/FarmListScreen";
 import AddFarm from "./screens/AddFarm";
 import EditProfile from "./screens/EditProfile";
 import Settings from "./screens/Settings";
+import PrivacyPolicyScreen from "./screens/PrivacyPolicyScreen";
+import FAQ from "./screens/FAQ";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Settings />
+      <FAQ />
     </SafeAreaView>
   );
 }

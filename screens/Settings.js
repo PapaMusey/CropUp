@@ -38,6 +38,14 @@ export default function Settings() {
           style={styles.button}
           onPress={() => console.log("navigation")}
         >
+          <Text style={styles.buttonText}>Privacy Policy</Text>
+        </TouchableOpacity>
+      </View>
+      <View>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => console.log("navigation")}
+        >
           <Text style={styles.buttonText}>Logout</Text>
         </TouchableOpacity>
       </View>
