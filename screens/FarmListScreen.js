@@ -45,16 +45,18 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     color: "#666666",
+    fontSize: 15,
   },
   title: {
-    fontWeight: "700",
-    paddingBottom: 20,
+    fontWeight: "500",
+    paddingBottom: 15,
+    fontSize: 18,
   },
   containerwraper: {
-    backgroundColor: "F1F1F1",
     borderWidth: 1,
-    paddingHorizontal: 50,
+    borderColor: "#F1F1F1",
+    backgrounColor: "#FBFBFB",
+    paddingHorizontal: 45,
     paddingVertical: 15,
-    borderColor: "#666666",
   },
 });
