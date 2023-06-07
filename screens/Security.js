@@ -23,7 +23,7 @@ export default function Security() {
         />
       </View>
       <View>
-        <Text style={styles.flow}>NEw Password</Text>
+        <Text style={styles.flow}>New Password</Text>
         <TextInput
           style={styles.input}
           onChangeText={(text) => console.log(text)}
@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: "#007E23",
-    borderRadius: 0,
   },
   buttonText: {
     textAlign: "center",
@@ -98,8 +97,7 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: "#007E23",
-    borderRadius: 10,
-    marginTop: 50,
+    marginTop: 170,
   },
   buttonText: {
     textAlign: "center",
