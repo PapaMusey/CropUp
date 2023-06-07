@@ -14,7 +14,7 @@ import FAQ from "./screens/FAQ";
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Security />
+      <FarmListScreen />
     </SafeAreaView>
   );
 }
