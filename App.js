@@ -6,7 +6,7 @@ import LogIn from "./screens/LogIn";
 import AuthenticationScreen from "./screens/AuthenticationScreen";
 import FarmListScreen from "./screens/FarmListScreen";
 import AddFarm from "./screens/AddFarm";
-import EditProfile from "./screens/EditProfile";
+import Security from "./screens/Security";
 import Settings from "./screens/Settings";
 import PrivacyPolicyScreen from "./screens/PrivacyPolicyScreen";
 import FAQ from "./screens/FAQ";
@@ -14,7 +14,7 @@ import FAQ from "./screens/FAQ";
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <FAQ />
+      <Security />
     </SafeAreaView>
   );
 }

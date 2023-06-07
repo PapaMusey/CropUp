@@ -25,23 +25,24 @@ export default function CreateAccountScreen() {
         <Text style={styles.subtitle}> Enter your details to sign up</Text>
       </View>
       <View>
-        <Text>Email address</Text>
+        <Text style={styles.flow}>Full Name</Text>
+        <TextInput
+          style={styles.input}
+          onChangeText={(text) => console.log(text)}
+          placeholder="Enter your full name"
+        />
+      </View>
+      <View>
+        <Text style={styles.flow}>Email address</Text>
         <TextInput
           style={styles.input}
           onChangeText={(text) => console.log(text)}
           placeholder="Enter your email"
         />
       </View>
+
       <View>
-        <Text>Phone Number</Text>
-        <TextInput
-          style={styles.input}
-          onChangeText={(text) => console.log(text)}
-          placeholder="Enter your Phone Number"
-        />
-      </View>
-      <View>
-        <Text>Password</Text>
+        <Text style={styles.flow}>Password</Text>
         <TextInput
           style={styles.input}
           onChangeText={(text) => console.log(text)}
@@ -49,22 +50,34 @@ export default function CreateAccountScreen() {
         />
       </View>
       <View>
-        <Text>Forgot Password</Text>
+        <Text style={styles.flow}>Confirm Password</Text>
+        <TextInput
+          style={styles.input}
+          onChangeText={(text) => console.log(text)}
+          placeholder="Confirm your Password"
+        />
       </View>
+      <View></View>
+
       <TouchableOpacity
         style={styles.button}
         onPress={() => console.log("navigation")}
       >
         <Text style={styles.buttonText}>SignUp</Text>
       </TouchableOpacity>
-      <View>
-        <Text>Already have an account ?</Text>
+
+      <View style={styles.inputContainer}>
+        <View>
+          <Text style={styles.bottomtext}>Already have an account ? </Text>
+        </View>
+        <View>
+          <TouchableOpacity onPress={() => console.log("texts")}>
+            <Text style={styles.bText}>Login</Text>
+          </TouchableOpacity>
+        </View>
       </View>
-      <View>
-        <TouchableOpacity onPress={() => console.log("texts")}>
-          <Text style={styles.bText}>Login</Text>
-        </TouchableOpacity>
-      </View>
+
+      {/* FINISH PASSWORD */}
     </View>
   );
 }
@@ -73,14 +86,19 @@ const styles = StyleSheet.create({
   container: {
     fontSize: 20,
     fontWeight: "bold",
-    marginTop: 20,
+    marginTop: 0,
   },
   titlep: {
     fontWeight: "500",
     fontSize: 25,
+    textAlign: "center",
+    paddingRight: 0,
   },
   subtitle: {
-    margin: 20,
+    marginTop: 10,
+    marginBottom: 10,
+    textAlign: "center",
+    color: "#777777",
   },
   input: {
     height: 40,
@@ -91,7 +109,8 @@ const styles = StyleSheet.create({
 
   button: {
     backgroundColor: "#007E23",
-    borderRadius: 18,
+    borderRadius: 10,
+    marginTop: 50,
   },
   buttonText: {
     textAlign: "center",
@@ -104,11 +123,37 @@ const styles = StyleSheet.create({
     fontWeight: "500",
   },
   input: {
-    borderRadius: 8,
+    borderRadius: 10,
     borderWidth: 1,
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    paddingRight: 50,
+    paddingVertical: 5,
+    paddingHorizontal: 100,
+    paddingLeft: 10,
     fontSize: 14,
+    borderColor: "#777777",
+  },
+  flow: {
+    color: "#777777",
+    marginTop: 20,
+    paddingLeft: 0,
+    paddingBottom: 5,
+  },
+  flowD: {
+    textAlign: "center",
+  },
+  belowconfirm: {
+    textAlign: "right",
+    paddingTop: 10,
+    paddingBottom: 40,
+    color: "#777777",
+  },
+  inputContainer: {
+    flexDirection: "row",
+    textAlign: "center",
+    marginTop: 160,
+    alignItems: "center",
+  },
+  bottomtext: {
+    color: "#777777",
+    paddingLeft: 20,
   },
 });

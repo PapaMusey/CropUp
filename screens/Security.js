@@ -2,41 +2,41 @@ import {
   View,
   Text,
   StyleSheet,
-  TouchableOpacity,
   TextInput,
+  TouchableOpacity,
 } from "react-native";
 import React from "react";
 
-export default function AddFarm() {
+export default function Security() {
   return (
     <View>
       <View>
-        <Text style={styles.titlep}>Add Farm</Text>
+        <Text style={styles.titlep}>Security</Text>
       </View>
 
       <View>
-        <Text style={styles.flow}>Farm Name</Text>
+        <Text style={styles.flow}>Old Password</Text>
         <TextInput
           style={styles.input}
           onChangeText={(text) => console.log(text)}
-          placeholder="Enter name of farm"
+          placeholder="Enter old password"
         />
       </View>
       <View>
-        <Text style={styles.flow}>Location</Text>
+        <Text style={styles.flow}>NEw Password</Text>
         <TextInput
           style={styles.input}
           onChangeText={(text) => console.log(text)}
-          placeholder="Enter farm location"
+          placeholder="Enter new password"
         />
       </View>
 
       <View>
-        <Text style={styles.flow}>Size of Land</Text>
+        <Text style={styles.flow}>Confirm Password</Text>
         <TextInput
           style={styles.input}
           onChangeText={(text) => console.log(text)}
-          placeholder="Enter Size/Area of Land"
+          placeholder="Confirm new password"
         />
       </View>
       <View>
@@ -52,18 +52,31 @@ export default function AddFarm() {
 }
 
 const styles = StyleSheet.create({
+  input: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+    borderColor: "#777777",
+    borderRadius: 10,
+  },
+  titlep: {
+    fontWeight: "500",
+    fontSize: 25,
+  },
+  button: {
+    backgroundColor: "#007E23",
+    borderRadius: 0,
+  },
   buttonText: {
     textAlign: "center",
     paddingBottom: 10,
     paddingTop: 10,
     color: "white",
   },
-  button: {
-    backgroundColor: "#007E23",
-    borderRadius: 0,
-    marginTop: 325,
+  gender: {
+    paddingBottom: 20,
   },
-
   flow: {
     color: "#777777",
     marginTop: 20,
@@ -79,10 +92,19 @@ const styles = StyleSheet.create({
     fontSize: 14,
     borderColor: "#777777",
   },
-  titlep: {
+  bText: {
+    color: "#007E23",
     fontWeight: "500",
-    fontSize: 25,
+  },
+  button: {
+    backgroundColor: "#007E23",
+    borderRadius: 10,
+    marginTop: 50,
+  },
+  buttonText: {
     textAlign: "center",
-    paddingRight: 0,
+    paddingBottom: 10,
+    paddingTop: 10,
+    color: "white",
   },
 });

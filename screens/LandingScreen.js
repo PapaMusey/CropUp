@@ -35,7 +35,7 @@ export default function LandingScreen({ navigation }) {
           <View>
             <TouchableOpacity
               style={styles.button}
-              onPress={() => console.log(navigation)}
+              onPress={() => console.log("navigation")}
             >
               <Text style={styles.Stext}>Get Started</Text>
             </TouchableOpacity>
